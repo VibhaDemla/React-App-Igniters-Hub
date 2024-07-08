@@ -16,7 +16,13 @@ const Home = () => {
       <h1>Home</h1>
       <ul>
         {todos.map(todo => (
-          <li key={todo.id}>{todo.title}</li>
+          <li key={todo.id} className="todo-item">
+            <span className="todo-id">{todo.id}.</span>
+            <span className="todo-title">{todo.title}</span>
+            <span className={`todo-status ${todo.completed ? 'completed' : 'pending'}`}>
+              {todo.completed ? 'Completed' : 'Pending'}
+            </span>
+          </li>
         ))}
       </ul>
     </div>
