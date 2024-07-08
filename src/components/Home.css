@@ -1,4 +1,4 @@
-/* src/components/Home.css */
+
 h1 {
     color: #333;
   }
@@ -15,4 +15,36 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 4px;
   }
+
+  .todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .todo-id {
+    flex: 1;
+    font-weight: bold;
+  }
+  
+  .todo-title {
+    flex: 2;
+    padding-left: 10px;
+  }
+  
+  .todo-status {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .completed {
+    color: green;
+  }
+  
+  .pending {
+    color: red;
+  }
+  
   
