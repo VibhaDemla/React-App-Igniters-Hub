@@ -1,52 +1,109 @@
-/* src/components/AddData.css */
 h1, h2 {
-    color: #333;
-  }
+  color: #333;
+}
+
+.add-data-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.component {
+  width: 45%;
+}
+
+.component1 {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.component2 {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px; 
+  align-self: flex-start; 
+}
+
+button:hover {
+  background-color: #dc3545;
+}
+
+/* ul {
+  list-style-type:disc; 
+  padding-left: 20px; 
+  color: black; 
+} */
+
+li {
+  background:white;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
   
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  input {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 0.5rem;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    background: #f9f9f9;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  li button {
-    background-color: #dc3545;
-    margin-left: 1rem;
-  }
-  
-  li button:hover {
-    background-color: #c82333;
-  }
-  
+}
+
+li button {
+
+  background-color: #c82333;
+  margin-left: 1rem;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin: 0; 
+}
+
+.separator {
+  width: 5px;
+  background-color: #FFCCCB;
+  height: auto;
+}
+
+.component1 h2, .component2 h2 {
+  color: red;
+}
